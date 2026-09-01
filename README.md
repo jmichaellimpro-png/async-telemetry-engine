@@ -18,18 +18,17 @@ An asynchronous Python-based daemon designed for fault-tolerant telemetry data c
 ```text
 #Quickstart
 Clone & Setup Virtual Environment:
-
 Bash
-git clone [https://github.com/jmichaellimpro-png/pdrrmo-async-telemetry-engine.git](https://github.com/jmichaellimpro-png/pdrrmo-async-telemetry-engine.git)
-cd pdrrmo-async-telemetry-engine
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+1. git clone [https://github.com/jmichaellimpro-png/async-telemetry-engine.git](https://github.com/jmichaellimpro-png/async-telemetry-engine.git)
+2. cd pdrrmo-async-telemetry-engine
+3. python -m venv venv
+4. source venv/bin/activate  # On Windows: venv\Scripts\activate
+5. pip install -r requirements.txt
+
 Configure Environment:
-
 Bash
-cp .env.example .env
+1. cp .env.example .env
+
 Run Ingestion Daemon:
-
 Bash
-python src/telemetry_engine.py
+1. python src/telemetry_engine.py
