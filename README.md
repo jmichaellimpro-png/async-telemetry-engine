@@ -15,3 +15,21 @@ An asynchronous Python-based daemon designed for fault-tolerant telemetry data c
 | Remote SCADA /    | ---> | Async Telemetry       | ---> | Central Time-Series |
 | Sensor Edge Nodes |      | Daemon (Python/Async) |      | Database / Storage  |
 +-------------------+      +-----------------------+      +---------------------+
+
+Quickstart
+Clone & Setup Virtual Environment:
+
+Bash
+git clone [https://github.com/jmichaellimpro-png/pdrrmo-async-telemetry-engine.git](https://github.com/jmichaellimpro-png/pdrrmo-async-telemetry-engine.git)
+cd pdrrmo-async-telemetry-engine
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+Configure Environment:
+
+Bash
+cp .env.example .env
+Run Ingestion Daemon:
+
+Bash
+python src/telemetry_engine.py
