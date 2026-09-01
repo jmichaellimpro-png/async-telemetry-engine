@@ -8,15 +8,7 @@ An asynchronous Python-based daemon designed for fault-tolerant telemetry data c
 * **Packet Loss Resilience:** Maintains continuous polling loops with zero data frame drops, routing permanently unreachable nodes to a Dead-Letter Queue (DLQ) pattern.
 * **Clean Configuration Management:** Zero hardcoded endpoints; fully driven by environment variables (`.env`).
 
-## System Architecture
-
-```text
-+-------------------+      +-----------------------+      +---------------------+
-| Remote SCADA /    | ---> | Async Telemetry       | ---> | Central Time-Series |
-| Sensor Edge Nodes |      | Daemon (Python/Async) |      | Database / Storage  |
-+-------------------+      +-----------------------+      +---------------------+
-```text
-#Quickstart
+## Quickstart
 Clone & Setup Virtual Environment:
 Bash
 1. git clone [https://github.com/jmichaellimpro-png/async-telemetry-engine.git](https://github.com/jmichaellimpro-png/async-telemetry-engine.git)
@@ -32,3 +24,11 @@ Bash
 Run Ingestion Daemon:
 Bash
 1. python src/telemetry_engine.py
+
+## System Architecture
+
+```text
++-------------------+      +-----------------------+      +---------------------+
+| Remote SCADA /    | ---> | Async Telemetry       | ---> | Central Time-Series |
+| Sensor Edge Nodes |      | Daemon (Python/Async) |      | Database / Storage  |
++-------------------+      +-----------------------+      +---------------------+
