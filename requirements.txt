@@ -1,0 +1,5 @@
+httpx>=0.25.0
+paho-mqtt>=1.6.1
+asyncio-dnp3>=0.1.0; platform_system != "Windows"
+python-dotenv>=1.0.0
+structlog>=23.1.0
