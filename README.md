@@ -15,8 +15,8 @@ An asynchronous Python-based daemon designed for fault-tolerant telemetry data c
 | Remote SCADA /    | ---> | Async Telemetry       | ---> | Central Time-Series |
 | Sensor Edge Nodes |      | Daemon (Python/Async) |      | Database / Storage  |
 +-------------------+      +-----------------------+      +---------------------+
-
-Quickstart
+```text
+#Quickstart
 Clone & Setup Virtual Environment:
 
 Bash
